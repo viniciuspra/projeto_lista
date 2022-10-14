@@ -56,10 +56,12 @@ button.add {
 
 button.add:hover {
     transform: scale(1.03);
+    border-radius: 50%;
 }
 
 button.add:active {
     transform: scale(0.98);
+    border-radius: 50%;
 }
 
 #icon {
