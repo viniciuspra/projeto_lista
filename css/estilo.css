@@ -16,7 +16,8 @@ h1 {
     color: white;
     text-align: center;
     margin-top: 20px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.132);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.103);
+    font-weight: bold;
 }
 
 header {
@@ -25,7 +26,7 @@ header {
     align-items: center;
     width: 80%;
     padding-top: 30px;
-    margin: auto;
+    margin: auto auto 25px auto;
 }
 
 .box {
@@ -55,6 +56,7 @@ input::placeholder {
 button.add {
     height: 30px;
     width: 30px;
+    margin: 1px 1px 1px 1%;
     border: none;
     border-radius: 50%;
     background-color: #3E79AE;
@@ -91,7 +93,7 @@ main {
     background-color: #43446A;
     height: 60px;
     width: 90%;
-    margin: 25px auto;
+    margin: 5px auto 5px auto;
     border: 1px solid #4A4B6F;
     border-radius: 10px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.155);
@@ -99,13 +101,88 @@ main {
 
 .item-icone {
     flex: 15%;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.4rem;
 }
+
+.item-icone > i {
+    color:  #EBF1F6;
+}
+
 .item-nome {
     flex: 70%;
-    border: 1px solid deeppink;
+    /* border: 1px solid deeppink; */
+    font-weight: 500;
+    color: white;
 }
 .item-botao {
     flex: 15%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
+
+.item-botao > button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 0px solid transparent;
+    background-color: #654ded28;
+    border-radius: 1.25em;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.item-botao > button:hover {
+    box-shadow:  3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),  8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),  17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),  36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),  99px 72px 143px rgba(0, 0, 0, 0.08);;
+}
+
+.delete {
+    position: relative;
+    display: inline-block;
+    height: 51px;
+}
+
+.delete:active {
+    transition: .1s ;
+    transform: scale(0.95);
+}
+
+.delete .tooltiptext {
+    visibility: hidden;
+    width: 4em;
+    background-color: #00000041;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 110%;
+}
+
+.delete .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+}
+
+.delete:hover .tooltiptext {
+    visibility: visible;
+}
+
+.delete span {
+    color: #5f49db;
+
+}
+
+
+
