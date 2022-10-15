@@ -12,13 +12,20 @@ body {
     background-color: #373760;
 }
 
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.132);
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     width: 80%;
     padding-top: 30px;
-    margin: 5% auto;
+    margin: auto;
 }
 
 .box {
@@ -66,4 +73,39 @@ button.add:active {
 
 #icon {
     color: white;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #43446A;
+    height: 60px;
+    width: 90%;
+    margin: 25px auto;
+    border: 1px solid #4A4B6F;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.155);
+}
+
+.item-icone {
+    flex: 15%;
+    border: 1px solid orange;
+}
+.item-nome {
+    flex: 70%;
+    border: 1px solid deeppink;
+}
+.item-botao {
+    flex: 15%;
+    border: 1px solid red;
 }
