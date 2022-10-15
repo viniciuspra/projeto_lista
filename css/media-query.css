@@ -134,4 +134,17 @@
         }
     
     }
+
+    .janela::-webkit-scrollbar {
+        width: 5px;               
+        }
+
+    .janela::-webkit-scrollbar-track {
+        background: #373760;        /* color of the tracking area */
+    }
+
+    .janela::-webkit-scrollbar-thumb {
+        background-color: #272851;    
+        border-radius: 20px;       
+    }
 }
