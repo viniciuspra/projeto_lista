@@ -10,12 +10,13 @@
 
 body {
     background-color: #373760;
+    height: 100vh;
 }
 
 h1 {
     color: white;
     text-align: center;
-    margin-top: 20px;
+    padding-top: 20px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.103);
     font-weight: bold;
 }
@@ -27,6 +28,23 @@ header {
     width: 80%;
     padding-top: 30px;
     margin: auto auto 25px auto;
+}
+
+#ToDo, #completed {
+    width: 425px;
+    height: 100%;
+    margin: auto;
+    display: block;
+    color: #d8d7d7b2;
+    font-weight: bold;
+    margin-left: 5%;
+    padding-bottom: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+#completed {
+    padding-top: 25px;
 }
 
 .box {
@@ -184,5 +202,12 @@ main {
 
 }
 
+.item.clicado {
+    background-color: #37376089;
+    border: 1px solid #4a4b6f85;
+}
 
-
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: #c0bdbd;
+}

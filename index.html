@@ -8,51 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <h1>Lista de Tarefas</h1>
     <header>
-        <div id="cor" class="box">
-            <input id="cor" type="text" placeholder=" Add Item" maxlength="21">
-            <button class="add"><i id="icon" class="fa-solid fa-plus"></i></button>
+        <div class="box">
+            <input id="inputTarefa" type="text" placeholder=" Add Item" maxlength="21">
+            <button onclick="addTarefa()" id="btn-add" class="add"><i id="icon" class="fa-solid fa-plus"></i></button>
         </div>
     </header>
     <main id="area-item">
-        <div class="item">
-            <div class="item-icone">
-                <i class="fa-regular fa-circle"></i>
-                <!-- <i class="fa-sharp fa-solid fa-circle-check"></i> -->
-            </div>
-            <div class="item-nome">
-                Teste de tarefas
-            </div>
-            <div class="item-botao">
-                <button class="delete">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" height="25" width="25">
-                        <span class="material-icons">delete_outline</span>
-                    </svg>
-                    <span class="tooltiptext">remove</span>
-                  </button>
-            </div>
+        <div id="ToDo"> A Fazer
+            
         </div>
-        <div class="item">
-            <div class="item-icone">
-                <i class="fa-regular fa-circle"></i>
-                <!-- <i class="fa-sharp fa-solid fa-circle-check"></i> -->
-            </div>
-            <div class="item-nome">
-                Teste de tarefas
-            </div>
-            <div class="item-botao">
-                <button class="delete">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" height="25" width="25">
-                        <span class="material-icons">delete_outline</span>
-                    </svg>
-                    <span class="tooltiptext">remove</span>
-                  </button>
-            </div>
+        
+        <div id="completed">Completas
+            
         </div>
+
+
     </main>
     
     <script src="https://kit.fontawesome.com/d8485be30e.js" crossorigin="anonymous"></script>
